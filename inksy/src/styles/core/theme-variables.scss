@@ -1,0 +1,20 @@
+// theme-variables.scss
+$colorHeaderLightFooter: #fff;
+$colorLightLightText: #000;
+$colorLightBackground: #f8f8fa;
+
+$colorHeaderDarkFooter: #36394c;
+$colorLightDarkText: #eff2f7;
+$colorDarkBackground: #222736;
+
+
+$theme-colors:(
+    g-black: #000,
+    g-white: #fff,
+    g-border: #ACACAC,
+    g-lightblue: #00A3FF,
+);
+
+@function getColor($color){
+    @return map-get($theme-colors, $color);
+}

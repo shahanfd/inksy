@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeContext } from './contexts/theme-context';
+import Login from './components/auth/Login/Login';
+import Home from './components/Home/Home';
+import './styles/main.scss';
+import PrivateRoute from './utils/PrivateRoutes';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+  
   return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div  className={`theme-${theme}`}>
+        <div className="g-main">
+          <Router>
+            <Routes>
+              <Route element={<PrivateRoute />}>
+                <Route element={<Home/>} path="/" exact />
+                <Route element={<Home/>} path="/home" />
+              </Route>
+              <Route element={<Login/>} path="/login" />
+            </Routes>
+          </Router>
+        </div>
+      </div>
     </div>
+    </ThemeContext.Provider>
   );
 }
 

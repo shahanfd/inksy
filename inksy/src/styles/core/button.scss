@@ -1,0 +1,9 @@
+@import './theme-variables.scss';
+@import './mixins.scss';
+
+.btn-primary{
+    min-width: 8.875rem;
+    min-height: 3.375rem;
+    background-color: getColor(g-light-blue) !important;
+    border-radius: 0.625rem !important;
+}
