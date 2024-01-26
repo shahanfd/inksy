@@ -6,10 +6,9 @@ import StepTwo from './StepTwo';
 import StepThree from './StepThree';
 
 
-const Login = () => {
+const ForgotPassword = () => {
 
     const [data, setData] = useState({
-        phone_no: "",
         otp: "",
         email: '',
         password: '',
@@ -67,4 +66,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default ForgotPassword;

@@ -40,8 +40,6 @@ body{
             width: 15%;
         }
         .l-side{
-            padding: 0 1rem 0 0;
-            border-right: 1px solid;
             .login-heading{
                 color: getColor(g-black);
                 font-size: 3rem;
@@ -69,6 +67,8 @@ body{
             }
         }
         .r-side{
+            padding: 0 0 0 1rem;
+            border-left: 1px solid;
             .headings-container{
                 margin: 0 0 2.5rem 0;
                 .app-heading{

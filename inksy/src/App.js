@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeContext } from './contexts/theme-context';
 import Login from './components/auth/Login/Login';
 import Home from './components/Home/Home';
+import ForgotPassword from './components/auth/ForgotPassword/ForgotPassword'
 import './styles/main.scss';
 import PrivateRoute from './utils/PrivateRoutes';
 
@@ -19,6 +20,7 @@ function App() {
               <Route element={<PrivateRoute />}>
                 <Route element={<Home/>} path="/" exact />
                 <Route element={<Home/>} path="/home" />
+                <Route element={<ForgotPassword/>} path="/forgot" />
               </Route>
               <Route element={<Login/>} path="/login" />
             </Routes>
