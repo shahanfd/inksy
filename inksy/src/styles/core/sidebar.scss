@@ -1,0 +1,169 @@
+.sidebar{
+    display: flex;
+    width: 24.125rem;
+    height: 100vh;
+    position: fixed;
+    .main-sidebar{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: calc(100% / 7);
+        background: getColor(g-sidebar-main);
+        .theme-dark &{
+            background: getColor(g-sidebar-main-dark);
+        }        
+        .logo-wrapper{
+            margin: 2.5rem 0 4rem 0;
+            padding: 0 0.2rem;
+            img{
+                width: 100%;
+            }
+        }
+        .menu-items{
+            .menu-item{
+                a{
+                  text-decoration: none;
+                  background: getColor(g-menu-items-bg);
+                  .theme-dark &{
+                    background: getColor(g-menu-items-bg-dark);
+                  }                   
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 2.5rem;
+                  height: 2.5rem;
+                  border-radius: 50%;
+                  margin-bottom: 1.5rem;
+                  color: getColor(g-black);
+                  .theme-dark &{
+                    color: getColor(g-menu-items-text-dark);
+                  }
+                  font-size: 1.2rem;
+
+                    &.active{
+                        background: getColor(g-lightblue);
+                        color: getColor(g-white);
+                    }
+                }
+            }
+        }
+    }
+    .sub-sidebar{
+        // width: calc(100% / 3);
+        background: getColor(g-sidebar);
+        .theme-dark &{
+            background: getColor(g-sidebar-dark);            
+        }
+        padding: 2.5rem 2.5rem;
+        .main-heading{
+            color: getColor(g-black);
+            .theme-dark &{
+                color: getColor(g-white);
+            }
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.02338rem;
+            margin: 0 0 1rem 0;
+        }
+        a{
+            text-decoration: none;
+            color: getColor(g-black);
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.017rem;
+            display: flex;
+            align-items: center;
+            width: 15rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+            padding: 1rem;
+            margin: 0 0 1rem 0;
+            i{
+                background: getColor(g-lightblue);
+                color: getColor(g-white);
+                border-radius: 50%;
+                padding: 0.3rem;
+                font-size: 0.7rem;
+                margin: 0 0.5rem 0 0;
+            }
+            .theme-dark &{
+                background: getColor(g-button-bg-dark);                    
+                color: getColor(g-white);
+            }
+            &.active{
+                background: getColor(g-lightblue);
+                color: getColor(g-white);
+                i{
+                    background: getColor(g-white);
+                    color: getColor(g-lightblue);
+                }
+            }
+        }
+    }
+}
+.main-sidebar-right{
+    background: getColor(g-white);
+    width: 15.125rem;
+    height: 100vh;
+    padding: 2.5rem 2.5rem;
+    position: fixed;
+    right: 0;
+    .theme-dark &{
+        background: getColor(g-sidebar-dark);            
+    }
+    .sidebar-right-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .profile-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 5.75rem;
+            }
+            .profile-heading{
+                color: getColor(g-black);
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.0255rem;
+                margin: 0.5rem 0;
+                .theme-dark &{
+                    color: getColor(g-white);
+                }
+            }
+        }
+        .profile-actions-container{
+            margin: 2.5em 0;
+            a{
+                color: getColor(g-sidebar-right-icon);
+                font-size: 1.5rem;
+                margin: 0 2rem 0 0;
+                &.active{
+                    color: getColor(g-lightblue);
+                }            
+                &:last-of-type{
+                    margin: 0;
+                }            
+            }
+        }
+        .profile-actions-buttons-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                margin: 0.5rem 0;
+                i{
+
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import {Formik , Form, Field} from 'formik'
 import * as Yup from 'yup';
-import {Link} from 'react-router-dom'
+import {Link, Navigate} from 'react-router-dom'
 
 const stepThreeValidationSchema = Yup.object({
     email: Yup.string().required().email().label('Email'),
@@ -10,7 +10,8 @@ const stepThreeValidationSchema = Yup.object({
 const StepThree = (props) => {
 
     const handleSubmit=(values)=>{
-        props.next(values, true);
+        // props.next(values, true);
+        <Navigate to="/home" />
     }
 
     return(
@@ -35,7 +36,7 @@ const StepThree = (props) => {
                                 <Field type="password" name="password" className="form-control" />
                                 <span className="link-danger">{formikProps.errors.password}</span>  
                             </div>
-                            <Link to="/forgot-password">Forget Password?</Link>
+                            <Link to="/forgot-password" className='forgot-pass-link mb-3'>Forget Password?</Link>
                             <button type="submit" className="btn btn-primary">Next</button>
                         </div>
                     </div>

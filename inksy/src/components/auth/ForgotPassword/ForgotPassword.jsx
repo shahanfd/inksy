@@ -1,5 +1,3 @@
-import Header from '../../Header/Header';
-import logo from '../../../logo.svg';
 import { useState } from 'react';
 import StepOne from './StepOne';
 import StepTwo from './StepTwo';

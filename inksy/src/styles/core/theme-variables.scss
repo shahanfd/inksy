@@ -13,6 +13,17 @@ $theme-colors:(
     g-white: #fff,
     g-border: #ACACAC,
     g-lightblue: #00A3FF,
+    g-sidebar-main: #f1f1f1,
+    g-sidebar-main-dark: #333333,    
+    g-sidebar: #ffffff,
+    g-sidebar-dark: #121212,
+    g-menu-items-bg: #d9d9d9,
+    g-menu-items-bg-dark: #121212,
+    g-theme-status: #BABABA,
+    g-menu-items-text-dark: #575757,
+    g-button-bg-dark: #333333,
+    g-sidebar-right-icon: #737373,
+    g-sidebar-right-icon-dark: #737373,
 );
 
 @function getColor($color){

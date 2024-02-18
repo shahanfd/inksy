@@ -1,11 +1,11 @@
-import Header from '../Header/Header';
+import { Children } from 'react';
+import Sidebar from '../Sidebar/Sidebar';
+import SidebarRight from '../Sidebar/SidebarRight';
 
 const Home = () => {    
 
     return(
-        <div>
-            <Header/>   
-        </div>
+        <div className=''>Home</div>
     )
 }
 

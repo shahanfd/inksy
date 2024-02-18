@@ -1,7 +1,10 @@
 @import './core/theme-variables.scss';
 @import './core/mixins.scss';
 @import './core/typography.scss';
+@import './core/utils.scss';
 @import './core/button.scss';
+@import './core/sidebar.scss';
+@import './core/style.css';
 
 :root {
     font-family: "Inter", sans-serif;
@@ -18,9 +21,33 @@ body{
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
+.App{
+    background: getColor(g-sidebar-main);
+    &.theme-dark{
+        background: getColor(g-sidebar-main-dark);
+    }
+}
+
 .g-main{
     position: relative;
-    height: 100vh;
+    height: 100vh;    
+    a{
+        text-decoration: none;
+    }
+    .text-muted{
+        .theme-dark & {
+            color: getColor(g-white) !important;
+        }
+    }
+    .center-layout{
+        width: calc(100% / 1);
+        padding: 1.5rem 1rem;
+        margin: 0 15.125rem 0 23.125rem;
+        background: getColor(g-sidebar-main);
+        .theme-dark &{
+            background: getColor(g-sidebar-main-dark);
+        }
+    }
     .elipse{
         position: absolute;
         z-index: -1;
@@ -64,6 +91,10 @@ body{
                     border-radius: 0.5rem;
                     border: 1px solid getColor(g-border);
                 }
+                .forgot-pass-link{
+                    display: block;
+                    text-decoration: none;
+                }
             }
         }
         .r-side{
@@ -89,25 +120,117 @@ body{
             }
         }
     }
+
 }
-.header {
+.theme-switch-wrapper {
     width: 100%;
-    padding: 30px;
-    z-index: 99;
-    box-shadow: 8px 0 25px rgba(0, 0, 0, 0.05);
-    background: $colorLightBackground;
-    .theme-dark &{
-        background: $colorDarkBackground;
+    padding: 0 30px;
+    z-index: 99;  
+    .theme-status{
+        color: getColor(g-black);
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.017rem;
+        .theme-dark &{      
+            color: getColor(g-theme-status);
+        }
     }
-    .header-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      .logo-section {
-        height: 50px;
-        text-decoration: none;
-        display: flex;
-        width: 430px;
-      }
+    // .switch {
+    //     position: relative;
+    //     display: inline-block;
+    //     width: 60px;
+    //     height: 34px;
+    // }
+      
+    // .switch input { 
+    // opacity: 0;
+    // width: 0;
+    // height: 0;
+    // }
+      
+    // .slider {
+    // position: absolute;
+    // cursor: pointer;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // background-color:  #2196F3;
+    // -webkit-transition: .4s;
+    // transition: .4s;
+    // }
+      
+    // .slider:before {
+    // position: absolute;
+    // content: "";
+    // height: 26px;
+    // width: 26px;
+    // left: 4px;
+    // bottom: 4px;
+    // background-color: white;
+    // -webkit-transition: .4s;
+    // transition: .4s;
+    // }
+    
+    // input:checked + .slider {
+    // background-color:  #ccc;
+    // }
+    
+    // input:focus + .slider {
+    // box-shadow: 0 0 1px  #ccc;
+    // }
+    
+    // input:checked + .slider:before {
+    // -webkit-transform: translateX(26px);
+    // -ms-transform: translateX(26px);
+    // transform: translateX(26px);
+    // }
+    
+    // .slider.round {
+    // border-radius: 34px;
+    // }
+    
+    // .slider.round:before {
+    // border-radius: 50%;
+    // }
+} 
+
+.search-container{
+    input{
+        border-radius: 20px;  
+        .theme-dark &{            
+            background: getColor(g-sidebar-dark);
+            border-color: getColor(g-sidebar-dark);
+            color: getColor(g-white);
+        }        
     }
-}  
+}
+
+.notification-card{
+    padding: 1rem;
+    border-radius: 8px;
+    .img-container{
+        width: 60px;
+        height: 60px;
+        background: grey;
+        border-radius: 30px;       
+        img{
+        width: 100%;
+       }
+    }
+    .card-body{
+        padding: 0 1rem;
+        .card-title{
+            font-weight: 600;
+        }
+        .card-text{
+            margin: 0 0 0.5rem 0 !important;
+        }
+    }
+    .theme-dark &{            
+        background: getColor(g-sidebar-dark);
+        color: getColor(g-white);
+    }   
+}

@@ -1,4 +1,4 @@
-import Header from '../../Header/Header';
+import Header from '../../Switch/Switch';
 import logo from '../../../logo.svg';
 import { useState } from 'react';
 import StepOne from './StepOne';
