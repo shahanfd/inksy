@@ -12,14 +12,14 @@ const Settings = ({children}) => {
                 path:'/settings/privacy'
             },
             {
-                title: 'Payments',
-                icon: 'icon-magnify',
-                path:'/settings/payment'
-            },
-            {
                 title: 'Password',
                 icon: 'icon-magnify',
                 path:'/settings/password'
+            },
+            {
+                title: 'Payments',
+                icon: 'icon-magnify',
+                path:'/settings/payment'
             },
         ])
     },[])
