@@ -103,7 +103,7 @@ body{
             .headings-container{
                 margin: 0 0 2.5rem 0;
                 .app-heading{
-                    color: getColor(g-light-blue);
+                    color: getColor(g-lightblue);
                     font-size: 1.875rem;
                     font-weight: 800;
                     text-transform: capitalize;
@@ -124,7 +124,82 @@ body{
         button{
             margin: 0 1rem;
             img{
-                
+
+            }
+        }
+    }
+    .home-comp{
+        padding: 0 1rem;
+        .journals-buttons-container{
+            button{
+                width: calc(100% / 3.1);
+                span{
+                    margin: 0 0.5rem 0 0;
+                }
+            }
+        }
+        .journals-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card{
+                width: calc(100% / 2.03);
+                margin: 0 0 1.5rem 0;
+                .card-img-top{
+                    height: calc(100% / 2);
+                }
+                .card-body{   
+                    position: relative;
+                    .theme-dark &{
+                        background: getColor(g-sidebar-dark) !important;
+                        border: 1px solid getColor(g-sidebar-dark) !important;
+                        color: getColor(g-white) !important;
+                    }                 
+                    .tag{
+                        background: getColor(g-lightblue);
+                        color: getColor(g-white);
+                        border-radius: 4px;
+                        padding: 0.1rem 0.5rem;
+                    }
+                    .avatar{
+
+                    }
+                    .card-title{
+                        font-size: 1.35rem;
+                        font-weight: 700;
+                        padding: 1rem 0;
+                        border-bottom: 1px solid getColor(g-sidebar-main);
+                        .theme-dark &{
+                            border-bottom: 1px solid getColor(g-menu-items-bg);
+                        }
+                    }
+                    .card-text{
+
+                    }
+                    .action-btns-container{
+                        position: absolute;
+                        bottom: 1rem;
+                        left: 0;
+                        button{
+                            background: transparent;
+                            border: transparent;
+                            font-size: 1rem;
+                            display: flex;
+                            margin: 0 0.38rem;
+                            .icon{
+                                font-size: 1.5rem;
+                            }
+                            &.active{
+                                .icon{
+                                    color: getColor(g-lightblue);
+                                }                                
+                            }
+                            .theme-dark & {
+                                color: getColor(g-white) !important;
+                            }
+                        }
+                    }                    
+                }
             }
         }
     }

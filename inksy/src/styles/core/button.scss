@@ -6,12 +6,28 @@
     min-height: 3.375rem;
     background: getColor(g-lightblue) !important;
     color: getColor(g-white) !important;
+    border-width: 2px !important;
     border-color: getColor(g-lightblue) !important;
     border-radius: 0.625rem !important;
     box-shadow: none;
     .theme-dark &{        
         background: getColor(g-sidebar-dark) !important;
         border-color: getColor(g-white) !important;
+    }
+}
+.btn-outline{
+    min-width: 8.875rem;
+    min-height: 3.375rem;
+    background: transparent !important;
+    color: getColor(g-lightblue) !important;
+    border-width: 2px !important;
+    border-color: getColor(g-lightblue) !important;
+    border-radius: 0.625rem !important;
+    box-shadow: none;
+    .theme-dark &{        
+        background: getColor(g-sidebar-dark) !important;
+        border-color: getColor(g-white) !important;
+        color: getColor(g-white) !important;
     }
 }
 .btn-sm{
