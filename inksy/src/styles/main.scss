@@ -168,9 +168,11 @@ body{
                         font-size: 1.35rem;
                         font-weight: 700;
                         padding: 1rem 0;
+                        color: getColor(g-black);
                         border-bottom: 1px solid getColor(g-sidebar-main);
                         .theme-dark &{
                             border-bottom: 1px solid getColor(g-menu-items-bg);
+                            color: getColor(g-white);
                         }
                     }
                     .card-text{
@@ -203,7 +205,6 @@ body{
             }
         }
     }
-
 }
 .theme-switch-wrapper {
     width: 100%;
@@ -219,65 +220,7 @@ body{
         .theme-dark &{      
             color: getColor(g-theme-status);
         }
-    }
-    // .switch {
-    //     position: relative;
-    //     display: inline-block;
-    //     width: 60px;
-    //     height: 34px;
-    // }
-      
-    // .switch input { 
-    // opacity: 0;
-    // width: 0;
-    // height: 0;
-    // }
-      
-    // .slider {
-    // position: absolute;
-    // cursor: pointer;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-    // background-color:  #2196F3;
-    // -webkit-transition: .4s;
-    // transition: .4s;
-    // }
-      
-    // .slider:before {
-    // position: absolute;
-    // content: "";
-    // height: 26px;
-    // width: 26px;
-    // left: 4px;
-    // bottom: 4px;
-    // background-color: white;
-    // -webkit-transition: .4s;
-    // transition: .4s;
-    // }
-    
-    // input:checked + .slider {
-    // background-color:  #ccc;
-    // }
-    
-    // input:focus + .slider {
-    // box-shadow: 0 0 1px  #ccc;
-    // }
-    
-    // input:checked + .slider:before {
-    // -webkit-transform: translateX(26px);
-    // -ms-transform: translateX(26px);
-    // transform: translateX(26px);
-    // }
-    
-    // .slider.round {
-    // border-radius: 34px;
-    // }
-    
-    // .slider.round:before {
-    // border-radius: 50%;
-    // }
+    }    
 } 
 
 .search-container{
@@ -316,4 +259,19 @@ body{
         background: getColor(g-sidebar-dark);
         color: getColor(g-white);
     }   
+}
+.cat-select-button{
+    button{
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        border: transparent;
+        box-shadow: 0px 2px 5px 0px #b9b9b9;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        margin: 0 0 0.6rem 0;
+        span{   
+            margin: 0 0.5rem 0 0;
+        }
+    }        
 }

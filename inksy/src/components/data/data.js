@@ -1,0 +1,13 @@
+const journalDetails = [{
+    banner:  'https://t4.ftcdn.net/jpg/02/42/89/53/360_F_242895340_l82pcAD259Gmm0CD1sc2DTrqnEUibgKC.jpg',
+    title: 'Title Here',
+    category: 'Food & Restaurant',
+    userImg: 'assets/images/avatar.png',
+    username: 'John Doe',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in augue semper, vestibulum neque et, tincidunt nunc. In egestas placerat ipsum, eu pharetra est eleifend quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque volutpat rhoncus turpis, sed dictum ipsum iaculis at. Cras dictum ac metus et ornare. Etiam sed arcu ac est vehicula laoreet. Morbi venenatis id turpis non gravida. Proin a venenatis odio. Nunc ornare mollis iaculis. Sed mi tortor, mollis id neque et, fermentum tincidunt dui. Vestibulum congue massa eu mi vestibulum, id interdum magna consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in augue semper, vestibulum neque et, tincidunt nunc. In egestas placerat ipsum, eu pharetra est eleifend quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque volutpat rhoncus turpis, sed dictum ipsum iaculis at. Cras dictum ac metus et ornare. Etiam sed arcu ac est vehicula laoreet. Morbi venenatis id turpis non gravida. Proin a venenatis odio. Nunc ornare mollis iaculis. Sed mi tortor, mollis id neque et, fermentum tincidunt dui. Vestibulum congue massa eu mi vestibulum, id interdum magna consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in augue semper, vestibulum neque et, tincidunt nunc. In egestas placerat ipsum, eu pharetra est eleifend quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque volutpat rhoncus turpis, sed dictum ipsum iaculis at. Cras dictum ac metus et ornare. Etiam sed arcu ac est vehicula laoreet. Morbi venenatis id turpis non gravida. Proin a venenatis odio. Nunc ornare mollis iaculis. Sed mi tortor, mollis id neque et, fermentum tincidunt dui. Vestibulum congue massa eu mi vestibulum, id interdum magna consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in augue semper, vestibulum neque et, tincidunt nunc. In egestas placerat ipsum, eu pharetra est eleifend quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque volutpat rhoncus turpis, sed dictum ipsum iaculis at. Cras dictum ac metus et ornare. Etiam sed arcu ac est vehicula laoreet. Morbi venenatis id turpis non gravida. Proin a venenatis odio. Nunc ornare mollis iaculis. Sed mi tortor, mollis id neque et, fermentum tincidunt dui. Vestibulum congue massa eu mi vestibulum, id interdum magna consectetur.',
+    likes: 20,
+
+}]
+
+
+export default journalDetails

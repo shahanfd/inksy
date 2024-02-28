@@ -4,4 +4,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    .theme-dark & {
+        color: getColor(g-white);
+    }
 }

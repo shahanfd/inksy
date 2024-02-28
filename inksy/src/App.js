@@ -13,6 +13,10 @@ import Settings from './components/settings/Settings';
 import Privacy from './components/settings/Privacy';
 import Payment from './components/settings/Payment';
 import Password from './components/settings/Password';
+import CategoriesSummary from './components/Categories/CategoriesSummary';
+import Categories from './components/Categories/Categories';
+import Journals from './components/Journals/Journals';
+import JournalDetail from './components/JournalDetail/JournalDetail';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -28,6 +32,10 @@ function App() {
 
                 <Route element={<Admin><Home/></Admin>} path="/" exact ></Route>
                 <Route element={<Admin><Home/></Admin>} path="/home" ></Route>
+                <Route element={<Admin><Journals/></Admin>} path="/journals" ></Route>
+                <Route element={<Admin><JournalDetail/></Admin>} path="/journals/:id" ></Route>
+                <Route element={<Admin><CategoriesSummary/></Admin>} path="/categories/summary" ></Route>
+                <Route element={<Admin><Categories/></Admin>} path="/categories" ></Route>
                 <Route element={<Admin><Notification/></Admin>} path="/notifications" ></Route>
                 <Route element={<Admin><BlockList/></Admin>} path="/blocklist" ></Route>
                 <Route element={<Admin><Settings/></Admin>} path="/settings" ></Route>
