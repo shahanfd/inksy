@@ -7,7 +7,6 @@ import ForgotPassword from './components/auth/ForgotPassword/ForgotPassword'
 import PrivateRoute from './utils/PrivateRoutes';
 import Notification from './components/Notification/Notification'
 import Admin from './layouts/Admin';
-import './styles/main.scss';
 import BlockList from './components/BlockList/BlockList';
 import Settings from './components/settings/Settings';
 import Privacy from './components/settings/Privacy';
@@ -17,6 +16,12 @@ import CategoriesSummary from './components/Categories/CategoriesSummary';
 import Categories from './components/Categories/Categories';
 import Journals from './components/Journals/Journals';
 import JournalDetail from './components/JournalDetail/JournalDetail';
+import ComGuidlines from './components/ComGuidlines/ComGuidlines';
+import About from './components/ComGuidlines/About';
+import Guidlines from './components/ComGuidlines/Guidlines';
+import './styles/main.scss';
+import TermsOfUse from './components/ComGuidlines/TermsOfUse';
+import PrivacyPolicy from './components/ComGuidlines/PrivacyPolicy';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -42,6 +47,11 @@ function App() {
                 <Route element={<Admin><Settings><Privacy/></Settings></Admin>} path="/settings/privacy" ></Route>
                 <Route element={<Admin><Settings><Payment/></Settings></Admin>} path="/settings/payment" ></Route>
                 <Route element={<Admin><Settings><Password/></Settings></Admin>} path="/settings/password" ></Route>
+                <Route element={<Admin><ComGuidlines/></Admin>} path="/community" ></Route>
+                <Route element={<Admin><ComGuidlines><About/></ComGuidlines></Admin>} path="/community/about" ></Route>
+                <Route element={<Admin><ComGuidlines><Guidlines/></ComGuidlines></Admin>} path="/community/guidlines" ></Route>
+                <Route element={<Admin><ComGuidlines><TermsOfUse/></ComGuidlines></Admin>} path="/community/terms" ></Route>
+                <Route element={<Admin><ComGuidlines><PrivacyPolicy/></ComGuidlines></Admin>} path="/community/privacy" ></Route>
 
               </Route>
               <Route element={<Login/>} path="/login" />

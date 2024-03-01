@@ -23,7 +23,7 @@ const data={
         {
             title: 'docs',
             icon: 'icon-file',
-            path:'/docs'
+            path:'/community'
         },
         {
             title: 'community',
@@ -109,7 +109,11 @@ const Sidebar = () => {
                     return(
                         <div className="menu-item" key={i}>
                             <Link to={ite.path}  className='sub-sidebar-item' onClick={(event)=>{ handleChange((event)) }}>
-                                <i className={ite.icon} />
+                                {/* <i className={ite.icon} /> */}
+                                <span class={`icon ${ite.icon}`}>
+                                    {/* <span class="path1"></span>
+                                    <span class="path2"></span> */}
+                                </span>
                                 {ite.title}
                             </Link>
                         </div>
