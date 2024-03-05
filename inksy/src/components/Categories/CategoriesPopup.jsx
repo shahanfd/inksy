@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import {Navigate} from 'react-router-dom'
 
-function Popup() {
+function Popup(props) {
   const [show, setShow] = useState(true);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => {    
+    setShow(false);
+    // props.onHide(true);
+    <Navigate to="/categories" />
+  }
+  const handleShow = () => {setShow(true)};
 
   return (
     <>

@@ -205,6 +205,12 @@ body{
             }
         }
     }
+    .index-container {
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
 }
 .theme-switch-wrapper {
     width: 100%;

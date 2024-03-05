@@ -110,9 +110,9 @@ const Sidebar = () => {
                         <div className="menu-item" key={i}>
                             <Link to={ite.path}  className='sub-sidebar-item' onClick={(event)=>{ handleChange((event)) }}>
                                 {/* <i className={ite.icon} /> */}
-                                <span class={`icon ${ite.icon}`}>
-                                    {/* <span class="path1"></span>
-                                    <span class="path2"></span> */}
+                                <span className={`icon ${ite.icon}`}>
+                                    {/* <span className="path1"></span>
+                                    <span className="path2"></span> */}
                                 </span>
                                 {ite.title}
                             </Link>

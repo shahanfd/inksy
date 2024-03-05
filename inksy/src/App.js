@@ -22,6 +22,8 @@ import Guidlines from './components/ComGuidlines/Guidlines';
 import './styles/main.scss';
 import TermsOfUse from './components/ComGuidlines/TermsOfUse';
 import PrivacyPolicy from './components/ComGuidlines/PrivacyPolicy';
+import JournalIndex from './components/JournalDetail/JournalIndex';
+
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -39,6 +41,7 @@ function App() {
                 <Route element={<Admin><Home/></Admin>} path="/home" ></Route>
                 <Route element={<Admin><Journals/></Admin>} path="/journals" ></Route>
                 <Route element={<Admin><JournalDetail/></Admin>} path="/journals/:id" ></Route>
+                <Route element={<Admin><JournalIndex/></Admin>} path="/journals/:id/index" ></Route>
                 <Route element={<Admin><CategoriesSummary/></Admin>} path="/categories/summary" ></Route>
                 <Route element={<Admin><Categories/></Admin>} path="/categories" ></Route>
                 <Route element={<Admin><Notification/></Admin>} path="/notifications" ></Route>

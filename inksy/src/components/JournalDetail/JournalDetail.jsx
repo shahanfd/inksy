@@ -1,5 +1,6 @@
 import journalDetails from '../data/data';
 import '../JournalDetail/JournalDetail.scss';
+import { Link } from 'react-router-dom';
 
 function JournalDetail(props) {    
     console.log('props:',props)
@@ -43,7 +44,10 @@ function JournalDetail(props) {
                     </button>
                 </div>
                 <div className="move-forward-btns-container">
-                    <button type="button" className="btn btn-primary">Next Page</button>
+                    <Link 
+                        className="btn btn-primary" 
+                        to={{pathname:"/journals/testJournal/index", state: 'abcd'}}
+                    >Next Page</Link>
                 </div>
             </div>
         </div>                

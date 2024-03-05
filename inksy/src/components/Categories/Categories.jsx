@@ -1,5 +1,5 @@
 import Search from "../search/Search";
-import Popup from './CategoriesPopup';
+import {Link} from 'react-router-dom'
 
 const cardData = [
     {
@@ -134,8 +134,7 @@ const cardData = [
 const Categories = () => {   
     
     return(
-        <div className='home-comp'>    
-            <Popup/>         
+        <div className='home-comp'>                   
              <div className="journals-search-container mb-5">
                 <Search
                     type="text"
@@ -158,7 +157,9 @@ const Categories = () => {
                                         <img src={ite.avatar} className="card-img-top" alt="journal image" />
                                     </div>
                                 </div>
-                                <h5 className="card-title">{ite.cardTitle}</h5>
+                                <Link to={{pathname:"/journals/testJournal", state: 'abc'}}>
+                                    <h5 className="card-title">{ite.cardTitle}</h5>
+                                </Link>
                                 <p className="card-text">{ite.cardText}</p>
                                 <div className="action-btns-container d-flex align-items-center">
                                     <button href="#" className="active">

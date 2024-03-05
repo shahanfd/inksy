@@ -121,7 +121,7 @@ const Journals = () => {
                                         <img src={ite.avatar} className="card-img-top" alt="journal image" />
                                     </div>
                                 </div>
-                                <Link to={'/journals/testJournal'} data={data} state={{ from: data }}>
+                                <Link to={{pathname:'/journals/testJournal', data:data , state:data  }}>
                                     <h5 className="card-title">{ite.cardTitle}</h5>
                                 </Link>
                                 <p className="card-text">{ite.cardText}</p>
